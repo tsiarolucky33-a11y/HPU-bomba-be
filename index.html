@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Investment Platform - Dark Mode</title>
+    <!-- Google Fonts ho an'ny endrika ara-teknolojia -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-glow"></div>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">VIP<span class="highlight">INVEST</span></span>
+            </div>
+            <div class="badge-status">
+                <span class="dot-online"></span> LIVE
+            </div>
+        </header>
+
+        <!-- Stepper Indicators -->
+        <div class="stepper">
+            <div class="step active" id="step1-indicator">1. Inscription</div>
+            <div class="step" id="step2-indicator">2. Dépôt</div>
+            <div class="step" id="step3-indicator">3. Dashboard</div>
+        </div>
+
+        <!-- STEP 1: FORMULAIRE D'INSCRIPTION -->
+        <div class="card" id="form-container">
+            <h2 class="title-gradient">Fisoratana Anarana</h2>
+            <p class="subtitle">Mifandray amin'ny sehatra VIP manerana ny nosy</p>
+
+            <div class="input-box">
+                <label for="phone">Laharana Finday</label>
+                <div class="input-field">
+                    <span class="icon">📱</span>
+                    <input type="text" id="phone" placeholder="Ohatra: 034 00 000 00">
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label for="password">Teny Miafina (Password)</label>
+                <div class="input-field">
+                    <span class="icon">🔒</span>
+                    <input type="password" id="password" placeholder="••••••••">
+                </div>
+            </div>
+
+            <button class="btn btn-primary" onclick="register()">
+                <span>Mampiditra Kaonty</span>
+                <span class="arrow">➔</span>
+            </button>
+        </div>
+
+        <!-- STEP 2: FANDOAVAM-BOLA (INVESTISSEMENT) -->
+        <div class="card hidden" id="payment-container">
+            <h2 class="title-gradient-gold">Fampiasam-bola VIP</h2>
+            <p class="subtitle">Mila manao investissement <span class="badge-gold">1 200 Ar</span> ianao mba hampavitrika ny kaontinao.</p>
+
+            <div class="neon-alert">
+                <div class="alert-title">🔥 Laharana Handefasana Vola:</div>
+                <div class="phone-display">
+                    <span id="momo-number">038 55 388 89</span>
+                    <button class="btn-copy" onclick="copyNumber()">Copier</button>
+                </div>
+                <small class="text-muted">Mandefa Mvola / Orange Money / Airtel Money</small>
+            </div>
+
+            <div class="input-box">
+                <label for="transaction-id">Référence / ID Transaction (Avy amin'ny SMS)</label>
+                <div class="input-field">
+                    <span class="icon">📄</span>
+                    <input type="text" id="transaction-id" placeholder="Ohatra: 123456789">
+                </div>
+            </div>
+
+            <button class="btn btn-secondary" onclick="confirmPayment()">
+                ⚡ Hanamarina ny Fandoavana
+            </button>
+        </div>
+
+        <!-- STEP 3: DASHBOARD / PALIER VIP -->
+        <div class="card hidden" id="dashboard-container">
+            <div class="user-header">
+                <div>
+                    <h3 id="user-phone">038 XXX XX XX</h3>
+                    <span class="badge-vip">VIP 1 ACTIVE</span>
+                </div>
+                <div class="balance-box">
+                    <small>Solde Total</small>
+                    <div class="balance-amount" id="user-balance">1 200 Ar</div>
+                </div>
+            </div>
+
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <span class="stat-label">Gain Quotidien</span>
+                    <span class="stat-value text-green">+300 Ar / andro</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Retrait Minimum</span>
+                    <span class="stat-value text-pink">5 000 Ar</span>
+                </div>
+            </div>
+
+            <button class="btn btn-gold" onclick="claimDailyProfit()">
+                🎁 Horaisina ny Tombony Anio (+300 Ar)
+            </button>
+
+            <div class="vip-packages">
+                <h4>Paliers d'Investissement VIP</h4>
+                <div class="vip-card vip-1">
+                    <div class="vip-title">VIP 1</div>
+                    <div class="vip-price">1 200 Ar</div>
+                    <div class="vip-profit">+300 Ar / andro</div>
+                </div>
+                <div class="vip-card vip-2">
+                    <div class="vip-title">VIP 2</div>
+                    <div class="vip-price">5 000 Ar</div>
+                    <div class="vip-profit">+1 500 Ar / andro</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
