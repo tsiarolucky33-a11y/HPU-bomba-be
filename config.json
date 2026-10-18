@@ -1,0 +1,10 @@
+{
+  "appName": "VIP Investment Madagascar",
+  "theme": "dark-neon",
+  "entryFee": 1200,
+  "dailyProfit": 300,
+  "paymentRecipient": "038 55 388 89",
+  "currency": "Ar",
+  "minWithdrawal": 5000,
+  "status": "active"
+}
